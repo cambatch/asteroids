@@ -38,8 +38,6 @@ def main():
                 print("Game over!")
                 return
 
-        # Shot-asteroid collisions
-        for asteroid in asteroids:
             for shot in shots:
                 if asteroid.collide(shot):
                     shot.kill()
